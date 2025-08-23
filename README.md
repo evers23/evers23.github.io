@@ -26,6 +26,7 @@ Este es mi portafolio personal desarrollado con Astro y Tailwind CSS. Presenta m
 ---
 
 ## 🧱 **Estructura del proyecto**
+
 public/
 └── svg/
 src/
@@ -44,8 +45,6 @@ src/
 │ └── SkillsList.tsx
 └── pages/
 └── index.astro
-
-
 ---
 
 ## ⚙️ **Configuración local**
