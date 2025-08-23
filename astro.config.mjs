@@ -5,8 +5,8 @@ import react from "@astrojs/react";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://evers23.github.io", // 👈 importante
-  base: "/", // si usas repo user/ever23.github.io, deja "/"
+  site: "https://evers23.github.io", // dominio GitHub Pages
+  base: "/", // raíz porque el repo se llama evers23.github.io
   integrations: [tailwind(), react()],
   vite: {
     resolve: {
