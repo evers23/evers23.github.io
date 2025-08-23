@@ -30,21 +30,21 @@ Este es mi portafolio personal desarrollado con Astro y Tailwind CSS. Presenta m
 public/
 └── svg/
 src/
-├── components/
-│ ├── contact.astro
-│ ├── footer.astro
-│ ├── home.astro
-│ ├── logoWall.astro
-│ ├── nav.astro
-│ └── projects.astro
+├── Components/
+|    ├── contact.astro
+|    ├── footer.astro
+|    ├── home.astro
+|    ├── logoWall.astro
+|    ├── nav.astro
+|    └── projects.astro
 ├── layouts/
-│ └── Layout.astro
+|    └── Layout.astro
 ├── React/
-│ ├── LetterGlitch.tsx
-│ ├── LikeButton.tsx
-│ └── SkillsList.tsx
+|    ├── LetterGlitch.tsx
+|    ├── LikeButton.tsx
+|    └── SkillsList.tsx
 └── pages/
-└── index.astro
+     └── index.astro
 ---
 
 ## ⚙️ **Configuración local**
@@ -59,7 +59,3 @@ npm install
 
 3. Iniciar el servidor de desarrollo:
 npm run dev
-
-
-
-
