@@ -3,340 +3,133 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  
-  <meta name="copyright" content="MACode ID, https://www.macodeid.com/">
-  
-  <title>Blog - Minibar</title>
-  
-  <link rel="shortcut icon" type="image/ico" href="../assets/favicon.ico">
-  
-  <link rel="stylesheet" type="text/css" href="../assets/css/themify-icons.css">
-  
-  <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.css">
+  <title>Ever Salinas - Blog Minibar</title>
 
-  <link rel="stylesheet" type="text/css" href="../assets/vendor/animate/animate.css">
-  
-  <link rel="stylesheet" type="text/css" href="../assets/vendor/owl-carousel/owl.carousel.css">
-  
-  <link rel="stylesheet" type="text/css" href="../assets/vendor/perfect-scrollbar/css/perfect-scrollbar.css">
-  
-  <link rel="stylesheet" type="text/css" href="../assets/vendor/nice-select/css/nice-select.css">
-  
-  <link rel="stylesheet" type="text/css" href="../assets/vendor/fancybox/css/jquery.fancybox.min.css">
-  
-  <link rel="stylesheet" type="text/css" href="../assets/css/virtual.css">
-  
-  <link rel="stylesheet" type="text/css" href="../assets/css/minibar.virtual.css">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    body { font-family: 'Roboto', sans-serif; scroll-behavior: smooth; }
+    .minibar { position: fixed; top: 0; left: 0; width: 80px; height: 100%; background: #222; color: #fff; display: flex; flex-direction: column; align-items: center; padding-top: 20px; transition: width 0.3s; }
+    .minibar:hover { width: 220px; }
+    .minibar .menu-link { color: #fff; display: flex; align-items: center; gap: 10px; padding: 10px; text-decoration: none; }
+    .minibar .menu-link:hover { background: #0d6efd; border-radius: 8px; }
+    .main-wrapper { margin-left: 80px; transition: margin-left 0.3s; }
+    .minibar:hover ~ .main-wrapper { margin-left: 220px; }
+    .card img { border-radius: 8px; transition: transform 0.3s; }
+    .card img:hover { transform: scale(1.05); }
+    footer { background: #222; color: #fff; padding: 40px 0; }
+    footer a { color: #0d6efd; text-decoration: none; }
+  </style>
 </head>
-<body class="theme-red">
-  
-  <!-- Back to top button -->
-  <div class="btn-back_to_top">
-    <span class="ti-arrow-up"></span>
-  </div>
-  
-  <!-- Setting button -->
-  <div class="config">
-    <div class="template-config">
-      <!-- Settings -->
-      <div class="d-block">
-        <button class="btn btn-fab btn-sm" id="sideel" title="Settings"><span class="ti-settings"></span></button>
-      </div>
-      <!-- Puschase -->
-      <div class="d-block">
-        <a href="https://macodeid.com/projects/virtual-folio/" class="btn btn-fab btn-sm" title="Get this template" data-toggle="tooltip" data-placement="left"><span class="ti-download"></span></a>
-      </div>
-      <!-- Help -->
-      <div class="d-block">
-        <a href="#" class="btn btn-fab btn-sm" title="Help" data-toggle="tooltip" data-placement="left"><span class="ti-help"></span></a>
-      </div>
-    </div>
-    <div class="set-menu">
-      <p>Select Color</p>
-      <div class="color-bar" data-toggle="selected">
-        <span class="color-item bg-theme-red selected" data-class="theme-red"></span>
-        <span class="color-item bg-theme-blue" data-class="theme-blue"></span>
-        <span class="color-item bg-theme-green" data-class="theme-green"></span>
-        <span class="color-item bg-theme-orange" data-class="theme-orange"></span>
-        <span class="color-item bg-theme-purple" data-class="theme-purple"></span>
-      </div>
-      <select class="custom-select" id="change-page">
-        <option value="">Choose Page</option>
-        <option value="index">Topbar</option>
-        <option value="blog-topbar">Blog (Topbar)</option>
-        <option value="index-2">Minibar</option>
-        <option value="blog-minibar">Blog (Minibar)</option>
-      </select>
-    </div>
-  </div>
-  
-  <div class="topbar-nav fixed-top">
-    <div class="brand">
-      <img src="../assets/favicon.ico" alt="" width="30" height="30">
-    </div>
-    <h3 class="ml-1">Folio</h3>
-    <button class="btn-fab toggle-menu mr-3"><span class="ti-menu"></span></button>
-  </div>
-  
-  <!-- Mini bar -->
+<body>
+
+  <!-- Minibar -->
   <div class="minibar">
-    <div class="header">
-      <div class="brand">
-        
-      </div>
-    </div>
-    <div class="content">
-      <ul class="main-menu">
-        <li class="menu-item active">
-          <a href="index-2.html" class="menu-link">
-            <span class="icon ti-arrow-left"></span>
-            <span class="caption">Back</span>
-          </a>
-        </li>
-      </ul>
-    </div>
-    <div class="footer">
-      <div class="social-menu">
-        
-      </div>
-    </div>
+    <a href="#home" class="menu-link"><i class="bi bi-house"></i> Home</a>
+    <a href="#blog" class="menu-link"><i class="bi bi-journal-text"></i> Blog</a>
+    <a href="#portfolio" class="menu-link"><i class="bi bi-grid"></i> Portfolio</a>
+    <a href="#contact" class="menu-link"><i class="bi bi-envelope"></i> Contact</a>
   </div>
-  
+
   <!-- Main Wrapper -->
-  <div class="vg-main-wrapper">
-    <div class="vg-page page-blog">
+  <div class="main-wrapper">
+    <!-- Home Section -->
+    <section id="home" class="py-5 text-center bg-light">
       <div class="container">
-        <div class="row widget-grid">
-          <div class="col-lg-8">
-            <div class="input-group py-2">
-              <input type="text" class="form-control" placeholder="Search">
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="d-flex py-2 mx-n2">
-              <div class="input-group px-2">
-                <select class="vg-select">
-                  <option value="">Category</option>
-                  <option value="cat-1">Design</option>
-                  <option value="cat-2">Technology</option>
-                  <option value="cat-3">Graphics</option>
-                  <option value="cat-4">UI/UX</option>
-                </select>
-              </div>
-              <div class="input-group px-2">
-                <select class="vg-select">
-                  <option value="">Sort By</option>
-                  <option value="cat-1">Newest</option>
-                  <option value="cat-2">Popular</option>
-                  <option value="cat-3">Recommended</option>
-                </select>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row post-grid">
+        <h1 class="display-5">Welcome to My Blog</h1>
+        <p class="lead">Sharing my projects, tips and tech insights</p>
+      </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="py-5">
+      <div class="container">
+        <h2 class="mb-4 text-center">Latest Posts</h2>
+        <div class="row g-4">
           <div class="col-md-6 col-lg-4">
             <div class="card">
-              <div class="img-place">
-                <img src="../assets/img/work/work-1.jpg" alt="">
-              </div>
-              <div class="caption">
-                <a href="javascript:void(0)" class="post-category">Technology</a>
-                <a href="#" class="post-title">Invision design forward fund</a>
-                <span class="post-date"><span class="sr-only">Published on</span> May 22, 2018</span>
-              </div>
-            </div>
-            <div class="card">
-              <div class="img-place">
-                <img src="../assets/img/work/work-2.jpg" alt="">
-              </div>
-              <div class="caption">
-                <a href="javascript:void(0)" class="post-category">Business</a>
-                <a href="#" class="post-title">Announcing a plan for small teams</a>
-                <span class="post-date"><span class="sr-only">Published on</span> May 22, 2018</span>
-              </div>
-            </div>
-            <div class="card">
-              <div class="img-place">
-                <img src="../assets/img/work/work-3.jpg" alt="">
-              </div>
-              <div class="caption">
-                <a href="javascript:void(0)" class="post-category">Technology</a>
-                <a href="#" class="post-title">Invision design forward fund</a>
-                <span class="post-date"><span class="sr-only">Published on</span> May 22, 2018</span>
+              <img src="https://via.placeholder.com/400x300" class="card-img-top" alt="Blog 1">
+              <div class="card-body">
+                <h5 class="card-title">Understanding React Hooks</h5>
+                <p class="card-text">A simple guide to mastering React hooks in modern web apps.</p>
               </div>
             </div>
           </div>
           <div class="col-md-6 col-lg-4">
             <div class="card">
-              <div class="img-place">
-                <img src="../assets/img/work/work-4.jpg" alt="">
-              </div>
-              <div class="caption">
-                <a href="javascript:void(0)" class="post-category">Business</a>
-                <a href="#" class="post-title">Announcing a plan for small teams</a>
-                <span class="post-date"><span class="sr-only">Published on</span> May 22, 2018</span>
-              </div>
-            </div>
-            <div class="card">
-              <div class="img-place">
-                <img src="../assets/img/work/work-5.jpg" alt="">
-              </div>
-              <div class="caption">
-                <a href="javascript:void(0)" class="post-category">Technology</a>
-                <a href="#" class="post-title">Invision design forward fund</a>
-                <span class="post-date"><span class="sr-only">Published on</span> May 22, 2018</span>
-              </div>
-            </div>
-            <div class="card">
-              <div class="img-place">
-                <img src="../assets/img/work/work-6.jpg" alt="">
-              </div>
-              <div class="caption">
-                <a href="javascript:void(0)" class="post-category">Business</a>
-                <a href="#" class="post-title">Announcing a plan for small teams</a>
-                <span class="post-date"><span class="sr-only">Published on</span> May 22, 2018</span>
+              <img src="https://via.placeholder.com/400x300" class="card-img-top" alt="Blog 2">
+              <div class="card-body">
+                <h5 class="card-title">Laravel API Best Practices</h5>
+                <p class="card-text">Tips to create clean and maintainable APIs using Laravel.</p>
               </div>
             </div>
           </div>
           <div class="col-md-6 col-lg-4">
             <div class="card">
-              <div class="img-place">
-                <img src="../assets/img/work/work-7.jpg" alt="">
-              </div>
-              <div class="caption">
-                <a href="javascript:void(0)" class="post-category">Design</a>
-                <a href="#" class="post-title">5 basic tips for illustrating</a>
-                <span class="post-date"><span class="sr-only">Published on</span> May 22, 2018</span>
+              <img src="https://via.placeholder.com/400x300" class="card-img-top" alt="Blog 3">
+              <div class="card-body">
+                <h5 class="card-title">Vue.js Component Patterns</h5>
+                <p class="card-text">Learn how to build reusable and efficient Vue components.</p>
               </div>
             </div>
-            <div class="card">
-              <div class="img-place">
-                <img src="../assets/img/work/work-8.jpg" alt="">
-              </div>
-              <div class="caption">
-                <a href="javascript:void(0)" class="post-category">Business</a>
-                <a href="#" class="post-title">Announcing a plan for small teams</a>
-                <span class="post-date"><span class="sr-only">Published on</span> May 22, 2018</span>
-              </div>
-            </div>
-            <div class="card">
-              <div class="img-place">
-                <img src="../assets/img/work/work-9.jpg" alt="">
-              </div>
-              <div class="caption">
-                <a href="javascript:void(0)" class="post-category">Technology</a>
-                <a href="#" class="post-title">Invision design forward fund</a>
-                <span class="post-date"><span class="sr-only">Published on</span> May 22, 2018</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 py-3">
-            <ul class="pagination justify-content-center">
-              <li class="page-item">
-                <a href="" class="page-link">Prev</a>
-              </li>
-              <li class="page-item active">
-                <a href="" class="page-link">1</a>
-              </li>
-              <li class="page-item">
-                <a href="" class="page-link">2</a>
-              </li>
-              <li class="page-item">
-                <a href="" class="page-link">3</a>
-              </li>
-              <li class="page-item">
-                <a href="" class="page-link">Next</a>
-              </li>
-            </ul>
           </div>
         </div>
       </div>
-    </div>
-    
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="mb-4 text-center">Portfolio</h2>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4"><img src="https://via.placeholder.com/400x300" alt="Project 1" class="img-fluid"></div>
+          <div class="col-md-6 col-lg-4"><img src="https://via.placeholder.com/400x300" alt="Project 2" class="img-fluid"></div>
+          <div class="col-md-6 col-lg-4"><img src="https://via.placeholder.com/400x300" alt="Project 3" class="img-fluid"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+      <div class="container">
+        <h2 class="mb-4 text-center">Contact Me</h2>
+        <form class="mx-auto" style="max-width:600px;">
+          <div class="mb-3">
+            <input type="text" class="form-control" placeholder="Name">
+          </div>
+          <div class="mb-3">
+            <input type="email" class="form-control" placeholder="Email">
+          </div>
+          <div class="mb-3">
+            <textarea class="form-control" rows="5" placeholder="Message"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary w-100">Send Message</button>
+        </form>
+      </div>
+    </section>
+
     <!-- Footer -->
-    <div class="vg-footer">
-      <h1 class="text-center">Virtual Folio</h1>
+    <footer class="text-center">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-4 py-3">
-            <div class="footer-info">
-              <p>Where to find me</p>
-              <hr class="divider">
-              <p class="fs-large fg-white">1600 Amphitheatre Parkway Mountain View, California 94043 US</p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3 py-3">
-            <div class="float-lg-right">
-              <p>Follow me</p>
-              <hr class="divider">
-              <ul class="list-unstyled">
-                <li><a href="#">Instagram</a></li>
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">Twitter</a></li>
-                <li><a href="#">Youtube</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3 py-3">
-            <div class="float-lg-right">
-              <p>Contact me</p>
-              <hr class="divider">
-              <ul class="list-unstyled">
-                <li>info@virtual.com</li>
-                <li>+8890234</li>
-                <li>+813023</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="row justify-content-center mt-3">
-          <div class="col-12 mb-3">
-            <h3 class="fw-normal text-center">Subscribe</h3>
-          </div>
-          <div class="col-lg-6">
-            <form class="mb-3">
-              <div class="input-group">
-                <input type="text" class="form-control" placeholder="Email address">
-                <input type="submit" class="btn btn-theme no-shadow" value="Subscribe">
-              </div>
-            </form>
-          </div>
-          <div class="col-12">
-            <p class="text-center mb-0 mt-4">Copyright &copy;2020. All right reserved | This template is made with <span class="ti-heart fg-theme-red"></span> by <a href="https://www.macodeid.com/">MACode ID</a></p>
-          </div>
+        <p>&copy; 2025 Ever Salinas. All rights reserved.</p>
+        <div>
+          <a href="#"><i class="bi bi-instagram me-2"></i></a>
+          <a href="#"><i class="bi bi-facebook me-2"></i></a>
+          <a href="#"><i class="bi bi-twitter me-2"></i></a>
+          <a href="#"><i class="bi bi-linkedin"></i></a>
         </div>
       </div>
-    </div> <!-- End footer -->
-  </div> <!-- End main wrapper -->
-  
-  <script src="../assets/js/jquery-3.5.1.min.js"></script>
-  
-  <script src="../assets/js/bootstrap.bundle.min.js"></script>
-  
-  <script src="../assets/vendor/owl-carousel/owl.carousel.min.js"></script>
-  
-  <script src="../assets/vendor/perfect-scrollbar/js/perfect-scrollbar.js"></script>
-  
-  <script src="../assets/vendor/isotope/isotope.pkgd.min.js"></script>
-  
-  <script src="../assets/vendor/nice-select/js/jquery.nice-select.min.js"></script>
-  
-  <script src="../assets/vendor/fancybox/js/jquery.fancybox.min.js"></script>
+    </footer>
+  </div>
 
-  <script src="../assets/vendor/wow/wow.min.js"></script>
-
-  <script src="../assets/vendor/animateNumber/jquery.animateNumber.min.js"></script>
-
-  <script src="../assets/vendor/waypoints/jquery.waypoints.min.js"></script>
-
-  <script src="../assets/js/google-maps.js"></script>
-
-  <script src="../assets/js/minibar-virtual.js"></script>
-
-  <!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIA_zqjFMsJM_sxP9-6Pde5vVCTyJmUHM&callback=initMap"></script> -->
-
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
