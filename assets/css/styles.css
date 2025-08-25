@@ -198,9 +198,9 @@ footer {
 }
 
 .navbar-logo {
-  width: 64px; /* From provided CSS */
-  height: 50px;
-  border-radius: 20%;
+  width: 40px; /* From provided CSS */
+  height: 30px;
+  border-radius: 25%;
   object-fit: cover;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 2.2); /* Adjusted shadow opacity */
 }
